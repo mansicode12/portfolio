@@ -1,6 +1,5 @@
 import React from "react";
 import { Col, Row } from "react-bootstrap";
-// Import necessary icons
 import { DiJavascript1, DiReact, DiPython, DiNodejs } from "react-icons/di";
 import {
   SiDjango,
@@ -8,7 +7,6 @@ import {
   SiPostgresql,
   SiSvelte,
   SiAmazonaws,
-  SiExpress,
   SiNextdotjs,
   SiMongodb,
   SiJest,
