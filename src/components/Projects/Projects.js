@@ -74,7 +74,7 @@ function Projects() {
               title="Portfolio Website"
               description="Personal portfolio site built with React, Tailwind CSS, and Framer Motion to showcase projects, skills, and resume in a professional and responsive design."
               ghLink="https://github.com/mansicode12/your-portfolio-repo"
-              demoLink="https://yourportfolio.vercel.app" // optional: add demo link
+              demoLink="https://dapper-swan-2c9945.netlify.app/" 
             />
           </Col>
 
