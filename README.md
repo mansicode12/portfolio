@@ -6,21 +6,6 @@ This is my personal portfolio website built using **React**, **Tailwind CSS**, a
 
 👉 [https://mansi-portfolio.netlify.app](https://mansi-portfolio.netlify.app)
 
-## 📁 Project Structure
-
-/portfolio
-├── public/
-├── src/
-│ ├── assets/ # Images, logos, icons
-│ ├── components/ # Reusable UI components
-│ ├── pages/ # Main pages like Home, Projects, Contact
-│ ├── App.jsx
-│ └── index.js
-├── tailwind.config.js
-├── postcss.config.js
-├── package.json
-└── README.md
-
 markdown
 Copy
 Edit
