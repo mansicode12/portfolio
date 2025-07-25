@@ -1,9 +1,10 @@
 import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
-import { AiFillGithub, AiFillInstagram } from "react-icons/ai";
-import { FaLinkedinIn } from "react-icons/fa";
+import { AiFillGithub } from "react-icons/ai";
+import { FaLinkedinIn, FaWhatsapp } from "react-icons/fa";
+import { MdEmail } from "react-icons/md";
 import Tilt from "react-parallax-tilt";
-import myImg from "../../Assets/my-image-2.png";
+import myImg from "../../Assets/Mansi.jpg"
 import { data } from "../../utils/data";
 
 function Introduction() {
@@ -13,60 +14,68 @@ function Introduction() {
         <Row>
           <Col md={8} className="home-about-description">
             <h1 style={{ fontSize: "2.6em" }}>
-              LET ME <span className="purple"> INTRODUCE </span> MYSELF
+             MY  <span className="purple">JOURNEY </span> 
             </h1>
             <p className="home-about-body">
-              My name is <span className="purple"> {data?.name}. </span>I am a
-              seasoned{" "}
-              <span className="purple">Full Stack Software Engineer</span> with
-              over 3 years of experience. I have honed my skills by working on
-              both <span className="purple">Monolithic</span> and{" "}
-              <span className="purple">Microservices Architectures</span>,
-              delivering efficient and scalable solutions.
-              <br />
-              <br />I have collaborated with{" "}
-              <span className="purple">startups</span> and{" "}
-              <span className="purple">corporates</span>, contributing to the
-              development of <span className="purple">services</span> and{" "}
-              <span className="purple">products</span> in diverse industries
-              such as <span className="purple">Healthcare</span>,{" "}
-              <span className="purple">FinTech</span>, and{" "}
-              <span className="purple">E-Commerce</span>.
+              My name is <span className="purple">Mansi Bisht.</span> I am a
+              passionate <span className="purple">B.Tech CSE (Data Science)</span> student from DIT University.
               <br />
               <br />
-              My passion lies in building innovative{" "}
+              I enjoy building impactful{" "}
+              <span className="purple">full-stack projects</span> using tools
+              like <span className="purple">React</span>,{" "}
+              <span className="purple">Flask</span>,{" "}
+              <span className="purple">SQLite</span>, and{" "}
+              <span className="purple">OpenRouter API</span>.
+              <br />
+              <br />
+              I have developed innovative applications such as{" "}
+              <span className="purple">TruthScan</span> and{" "}
+              <span className="purple">HireMe</span> that showcase my skills in
+              building intelligent systems for fact-checking and resume analysis.
+              <br />
+              <br />
+              I love working on modern{" "}
               <i>
-                <b className="purple">Web Technologies</b>
+                <b className="purple">web technologies</b>
               </i>{" "}
-              and crafting seamless digital experiences. Whenever possible, I
-              strive to apply my expertise in{" "}
-              <span className="purple">Djnago</span> and{" "}
-              <i>
-                <b className="purple">
-                  Modern JavaScript Libraries and Frameworks
-                </b>
-              </i>{" "}
-              like <span className="purple">React.js</span> and{" "}
-              <span className="purple">Next.js</span> to create impactful
-              solutions.
+              and strive to continuously improve my abilities in{" "}
+              <span className="purple">React.js</span>,{" "}
+              <span className="purple">Tailwind CSS</span>, and{" "}
+              <span className="purple">FastAPI</span>.
               <br />
               <br />
-              With a deep appreciation for clean code and robust architecture, I
-              am driven to deliver exceptional results and continuously enhance
-              my craft.
+              I'm always excited to take on new challenges and contribute to
+              meaningful tech solutions.
             </p>
           </Col>
           <Col md={4} className="myAvtar">
-            <Tilt>
-              <img
-                src={myImg}
-                style={{
-                  filter: "drop-shadow(-1px 0px 20px var(--imp-text-color))",
-                }}
-                className="img-fluid"
-                alt="avatar"
-              />
-            </Tilt>
+           <Tilt>
+        <div
+  style={{
+    width: "500px",
+    height: "500px",
+    borderRadius: "50%",
+    overflow: "hidden",
+    border: "4px solid #915eff",
+    boxShadow: "0 4px 20px rgba(0, 0, 0, 0.3)",
+    margin: "0 auto",
+     marginLeft: "-50px", 
+  }}
+>
+  <img
+    src={myImg}
+    alt="Mansi Bisht"
+    style={{
+      width: "100%",
+      height: "100%",
+      objectFit: "cover",
+    }}
+  />
+</div>
+
+</Tilt>
+
           </Col>
         </Row>
 
@@ -82,7 +91,7 @@ function Introduction() {
                   href={data?.socials?.github}
                   target="_blank"
                   rel="noreferrer"
-                  className="icon-colour  home-social-icons"
+                  className="icon-colour home-social-icons"
                 >
                   <AiFillGithub />
                 </a>
@@ -92,19 +101,29 @@ function Introduction() {
                   href={data?.socials?.linkedin}
                   target="_blank"
                   rel="noreferrer"
-                  className="icon-colour  home-social-icons"
+                  className="icon-colour home-social-icons"
                 >
                   <FaLinkedinIn />
                 </a>
               </li>
               <li className="social-icons">
                 <a
-                  href={data?.socials?.instagram}
+                  href={`mailto:${data?.socials?.gmail}`}
+                  className="icon-colour home-social-icons"
                   target="_blank"
                   rel="noreferrer"
-                  className="icon-colour home-social-icons"
                 >
-                  <AiFillInstagram />
+                  <MdEmail />
+                </a>
+              </li>
+              <li className="social-icons">
+                <a
+                  href={`https://wa.me/${data?.socials?.whatsapp?.replace("+", "")}`}
+                  className="icon-colour home-social-icons"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <FaWhatsapp />
                 </a>
               </li>
             </ul>
@@ -114,4 +133,5 @@ function Introduction() {
     </Container>
   );
 }
+
 export default Introduction;

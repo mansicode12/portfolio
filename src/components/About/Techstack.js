@@ -1,52 +1,56 @@
 import React from "react";
 import { Col, Row } from "react-bootstrap";
-import { DiJavascript1, DiReact, DiPython, DiNodejs } from "react-icons/di";
+import { DiJavascript1, DiReact, DiPython, DiNodejs, DiJava } from "react-icons/di";
 import {
-  SiDjango,
+  SiHtml5,
+  SiCss3,
+  SiTailwindcss,
   SiFlask,
-  SiPostgresql,
-  SiSvelte,
-  SiAmazonaws,
-  SiNextdotjs,
   SiMongodb,
-  SiJest,
-  SiCypress,
+  SiMysql,
+  SiPandas,
+  SiNumpy,
+  SiR,
 } from "react-icons/si";
-import { FaDocker } from "react-icons/fa";
+import { FaGitAlt } from "react-icons/fa";
 
 function Techstack() {
   const technologies = [
+    "C",
+    "Java",
     "Python",
-    "Javascript",
+    "R",
+    "HTML",
+    "CSS",
+    "Tailwind CSS",
+    "JavaScript",
     "React",
-    "Django",
+    "Node.js",
     "Flask",
-    "Postgres",
-    "Sveltekit",
-    "Aws",
-    "Docker",
-    "Next JS",
-    "Node",
-    "Mongo",
-    "Jest",
-    "Cypress",
+    "MongoDB",
+    "MySQL",
+    "Git",
+    "Pandas",
+    "NumPy",
   ];
 
   const techIcons = {
+    C: () => <span style={{ fontSize: "2em" }}>C</span>,
+    Java: DiJava,
     Python: DiPython,
-    Javascript: DiJavascript1,
+    R: SiR,
+    HTML: SiHtml5,
+    CSS: SiCss3,
+    "Tailwind CSS": SiTailwindcss,
+    JavaScript: DiJavascript1,
     React: DiReact,
-    Django: SiDjango,
+    "Node.js": DiNodejs,
     Flask: SiFlask,
-    Postgres: SiPostgresql,
-    Sveltekit: SiSvelte,
-    Aws: SiAmazonaws,
-    Docker: FaDocker,
-    "Next JS": SiNextdotjs,
-    Node: DiNodejs,
-    Mongo: SiMongodb,
-    Jest: SiJest,
-    Cypress: SiCypress,
+    MongoDB: SiMongodb,
+    MySQL: SiMysql,
+    Git: FaGitAlt,
+    Pandas: SiPandas,
+    NumPy: SiNumpy,
   };
 
   return (

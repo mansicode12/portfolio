@@ -1,12 +1,10 @@
 import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
-import leaf from "../../Assets/Projects/leaf.png";
-import enroll from "../../Assets/Projects/enrolledAi.png";
-import indow from "../../Assets/Projects/indowwindows.svg";
-import authjs from "../../Assets/Projects/authjs.png";
-import bloodwallet from "../../Assets/Projects/bloodwallet.png";
-import tradingfeed from "../../Assets/Projects/tradingfeed.svg";
-import chromeextension from "../../Assets/Projects/chrome-extension.jpeg";
+import truthscan from "../../Assets/Projects/truthscan.jpg";
+import hireme from "../../Assets/Projects/hireme.jpg";
+import farmguard from "../../Assets/Projects/farmguard.png";
+import tripplanner from "../../Assets/Projects/tripplanner.png";
+import portfolio from "../../Assets/Projects/portfolio.jpg"; 
 import Particle from "../Particle";
 import ProjectCard from "./ProjectCards";
 
@@ -19,72 +17,67 @@ function Projects() {
           My Recent <strong className="purple">Works </strong>
         </h1>
         <p style={{ color: "white" }}>
-          Here are a few projects I've worked on recently.
+          Here are some meaningful projects I've built showcasing full‑stack
+          skills and AI integrations.
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+          
+          {/* TruthScan Project */}
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={leaf}
+              imgPath={truthscan}
               isBlog={false}
-              title="VinSavvy"
-              description="An automotive industry product that scrapes data from multiple car dealerships to provide processed insights for dealership sales personnel. Features include price comparison, inventory tracking, sales analytics, and a Chrome extension for real-time data integration. Developed dashboards for admins and dealership groups for effective management."
+              title="TruthScan"
+              description="AI‑powered misinformation detector: verifies text claims, spots deepfakes, and checks source credibility. Full-stack with user auth, Flask backend, React frontend, SQLite DB, and PDF report export."
+              ghLink="https://github.com/mansicode12/truthscan"
             />
           </Col>
 
+          {/* HireMe Project */}
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={enroll}
+              imgPath={hireme}
               isBlog={false}
-              title="Enrolled AI"
-              description="A healthcare system utilizing Medplum and strict adherence to FHIR standards. Integrated AI models analyze MRI, X-Ray, and other scans to provide detailed insights to patients. Developed user-friendly dashboards for patients and healthcare administrators, ensuring secure and efficient management of sensitive health data."
+              title="HireMe"
+              description="Smart resume & JD analyzer with AI: calculates match score, highlights key strengths/weaknesses, and generates personalized cover letters. Built with React, Flask, SQLite & OpenAI API."
+              ghLink="https://github.com/mansicode12/hireme"
             />
           </Col>
 
+          {/* FarmGuard Project */}
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={indow}
+              imgPath={farmguard}
               isBlog={false}
-              title="Indow Windows"
-              description="A home improvement product sales platform focused on window insulation solutions. Developed multiple frontend pages and integrated a payment gateway using Stripe. Built a secure authentication system and implemented sales strategies to improve customer engagement and streamline transactions."
-            />
-          </Col>
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={tradingfeed}
-              isBlog={false}
-              title="Trading Feed"
-              description="An e-commerce platform that allows users worldwide to list items they need in bulk. The system monitors product availability globally, notifies users via email or in-app notifications when their desired items are listed, and facilitates streamlined communication between buyers and sellers."
-              ghLink="https://github.com/Mr-Moeez/supplyseek"
-            />
-          </Col>
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={authjs}
-              isBlog={false}
-              title="SvelteKit Authentication with Supabase"
-              description="Implemented authentication for a SvelteKit application using Supabase, enabling secure user sign-up, login, and session management. The project integrates Supabase's real-time database features and leverages SvelteKit's server-side rendering capabilities to deliver a seamless and efficient user experience."
-              ghLink="https://github.com/Mr-Moeez/SvelteKit-Supabase-Auth"
+              title="FarmGuard"
+              description="AI Crop Doctor: detects plant diseases from images using ML, advises on remedies, provides weather data and an AI chatbot. Built with Flask backend, TensorFlow model & responsive UI with Tailwind CSS."
+              ghLink="https://github.com/mansicode12/farmguard"
             />
           </Col>
 
+          {/* AI Trip Planner */}
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={bloodwallet}
+              imgPath={tripplanner}
               isBlog={false}
-              title="Blood Wallet"
-              description="A life-saving platform designed to connect blood donors with those in urgent need. Users can request blood, search for donors in their area, or register to donate blood. Features include location-based donor matching, a secure user database, and real-time notifications to ensure timely assistance."
-              ghLink="https://github.com/Mr-Moeez/Blood-wallet"
+              title="AI Trip Planner"
+              description="AI-powered travel assistant that generates optimized travel plans using OpenAI. Users enter destinations, duration, and preferences to receive daily itineraries. Built with Flask, React & OpenAI API."
+              ghLink="https://github.com/mansicode12/ai-trip-planner"
             />
           </Col>
+
+          {/* Portfolio Website */}
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={chromeextension}
+              imgPath={portfolio}
               isBlog={false}
-              title="React Component Chrome Extension Template"
-              description="A boilerplate project to simplify building Chrome extensions using React. Includes a setup for content scripts and component-based architecture, enabling developers to quickly create and deploy feature-rich extensions. Designed for ease of customization and rapid development."
-              ghLink="https://github.com/Mr-Moeez/React-component-content-script-extension-template"
+              title="Portfolio Website"
+              description="Personal portfolio site built with React, Tailwind CSS, and Framer Motion to showcase projects, skills, and resume in a professional and responsive design."
+              ghLink="https://github.com/mansicode12/your-portfolio-repo"
+              demoLink="https://yourportfolio.vercel.app" // optional: add demo link
             />
           </Col>
+
         </Row>
       </Container>
     </Container>
