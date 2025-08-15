@@ -29,7 +29,7 @@ function Projects() {
               isBlog={false}
               title="TruthScan"
               description="AI‑powered misinformation detector: verifies text claims, spots deepfakes, and checks source credibility. Full-stack with user auth, Flask backend, React frontend, SQLite DB, and PDF report export."
-              ghLink="https://github.com/mansicode12/truthscan"
+              ghLink="https://github.com/mansicode12/truthscan-frontend"
             />
           </Col>
 
@@ -51,7 +51,7 @@ function Projects() {
               isBlog={false}
               title="FarmGuard"
               description="AI Crop Doctor: detects plant diseases from images using ML, advises on remedies, provides weather data and an AI chatbot. Built with Flask backend, TensorFlow model & responsive UI with Tailwind CSS."
-              ghLink="https://github.com/mansicode12/farmguard"
+              ghLink="https://github.com/mansicode12/FarmGuard-AI-Crop-Doctor"
             />
           </Col>
 
@@ -73,7 +73,7 @@ function Projects() {
               isBlog={false}
               title="Portfolio Website"
               description="Personal portfolio site built with React, Tailwind CSS, and Framer Motion to showcase projects, skills, and resume in a professional and responsive design."
-              ghLink="https://github.com/mansicode12/your-portfolio-repo"
+              ghLink="https://github.com/mansicode12/portfolio"
               demoLink="https://dapper-swan-2c9945.netlify.app/" 
             />
           </Col>
