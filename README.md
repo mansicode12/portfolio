@@ -6,9 +6,6 @@ This is my personal portfolio website built using **React**, **Tailwind CSS**, a
 
 👉 [https://mansi-portfolio.netlify.app](https://dapper-swan-2c9945.netlify.app/)
 
-markdown
-Copy
-Edit
 
 ## 🛠️ Tech Stack
 
